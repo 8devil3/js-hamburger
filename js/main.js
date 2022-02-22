@@ -5,15 +5,11 @@ let closeLink = document.querySelector('header .hamburger-menu a.close');
 
 
 // event listeners
-hamburgerLink.addEventListener('click', openMenu);
-closeLink.addEventListener('click', closeMenu);
+hamburgerLink.addEventListener('click', toggleMenu);
+closeLink.addEventListener('click', toggleMenu);
 
 
 // functions
-function openMenu() {
-    menuMobile.style.display = 'block';
-}
-
-function closeMenu() {
-    menuMobile.style.display = 'none';
+function toggleMenu() {
+    menuMobile.classList.toggle('active');
 }
