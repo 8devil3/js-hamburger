@@ -1,11 +1,10 @@
 let menuMobile = document.querySelector('header div.hamburger-menu');
-let hamburgerLink = document.querySelector('.header-right > a');
-let closeLink = document.querySelector('header .hamburger-menu a.close');
+let navToggle = document.querySelectorAll('header > div > a');
 
 
 // event listeners
-hamburgerLink.addEventListener('click', toggleMenu);
-closeLink.addEventListener('click', toggleMenu);
+navToggle[0].addEventListener('click', toggleMenu);
+navToggle[1].addEventListener('click', toggleMenu);
 
 
 // functions
