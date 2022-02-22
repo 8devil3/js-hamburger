@@ -1,5 +1,4 @@
-let menuMobile = document.querySelector('header div:nth-of-type(3)');
-
+let menuMobile = document.querySelector('header div.hamburger-menu');
 let hamburgerLink = document.querySelector('.header-right > a');
 let closeLink = document.querySelector('header .hamburger-menu a.close');
 
